@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #675c74;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgb(236, 200, 200);
+    width: 100%;
+    height: 70px;
+}
+
+.nav-group {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-link {
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    line-height: 1.4px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+.welcome-section > p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.project-section {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.project-section-head {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid white;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h1 h2 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background-color: teal;
+    box-shadow: 1px 1px 2px rgb(236, 200, 200);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background-color: steelblue;
+}
+
+.contact-section-head > h2 {
+    font-size: 6rem;
+}
+
+.contact-section-head > p {
+    font-style: italic;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.contact-details{
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
